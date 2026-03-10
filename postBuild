@@ -1,3 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
-python -m ipykernel install --user --name=binder-env
+# Keep this in sync with binder/postBuild for local reproducibility.
+python -m ipykernel install --user --name=binder-env --display-name "Python (binder-env)"

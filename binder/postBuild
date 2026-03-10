@@ -1,3 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
-python -m ipykernel install --user --name=binder-env
+# Register a predictable kernel name for notebooks.
+python -m ipykernel install --user --name=binder-env --display-name "Python (binder-env)"
